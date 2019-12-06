@@ -88,5 +88,15 @@ print(a)
     alunosReprovads =  a.loc[a['Aprovado']!='Não']
 
 
+    Para alterar mome das colunas
+
+    a.rename(columns={'Name':'Nome','Sex':'Sexo'})
+
+    
+    //Excluir dados da coluna
+
+    a.drop('ID', axis = 1, inplace=True)
+
+
 """
     
