@@ -13,6 +13,9 @@ print(a)
 
 
 """
+
+https://cadernoscicomp.com.br/tutorial/matplot-e-pandas/matplot-e-pandas-em-estatistica-basica-histograma-digrama-de-barras/
+
  A saida seria 
    
     Nome        Nota   Aproado
@@ -93,9 +96,26 @@ print(a)
     a.rename(columns={'Name':'Nome','Sex':'Sexo'})
 
     
-    //Excluir dados da coluna
+    //Excluir dados da coluna  obs: axis = 1 significa coluna, axis= 0 significa linha ecluir lina;...
 
     a.drop('ID', axis = 1, inplace=True)
+
+
+   
+    // HISTOGRAMA - PARA UMA DETERMINADA LINHA EM UMA TABELA:
+
+    a.hist(column='Age', bins=10)
+
+
+    Se fosse array:
+
+    plt.hist(nome_array, bins=10)
+
+
+    //BOXPLOT 
+
+    a.boxplot(column='Age')
+
 
 
 """
